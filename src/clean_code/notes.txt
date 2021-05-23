@@ -1,0 +1,54 @@
+-- methods
+    3 arguments max
+    avoid booleans and nulls
+    should be small
+    should do one thing
+    well named
+
+-- classes
+    should do only one thing
+    methods are important
+    use generalization for abstract classes and interfaces
+    camelCase in naming
+    nouns in naming
+    strong responsibility
+    reusable and easier
+
+-- DRY
+    don't repeat yourself
+    dont copy and paste
+    multiple code similarity
+    dont write the same code repeatedly
+
+
+-- SOLID (Uncle Bob Robert Martin)
+    single responsible principle
+        Testing – A class with one responsibility will have far fewer test cases.
+        Lower coupling – Less functionality in a single class will have fewer dependencies.
+        Organization – Smaller, well-organized classes are easier to search than monolithic ones.
+        code is easier to maintain
+        easier to add new functionality
+        easier to debug
+
+    open closed principle (Open for Extension, Closed for Modification)
+    liskov substitute principle
+    interface segregation principle
+    dependency inversion principle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

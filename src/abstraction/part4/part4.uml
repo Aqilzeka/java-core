@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>abstraction.part4</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">abstraction.part4.Rideable</node>
+    <node x="176.5" y="93.0">abstraction.part4.Horse</node>
+    <node x="304.5" y="93.0">abstraction.part4.Rabbit</node>
+    <node x="435.5" y="93.0">abstraction.part4.Jaguar</node>
+    <node x="350.5" y="0.0">abstraction.part4.Animal</node>
+    <node x="0.0" y="171.0">abstraction.part4.Test</node>
+    <node x="170.0" y="0.0">abstraction.part4.Sellable</node>
+    <node x="45.5" y="93.0">abstraction.part4.Camel</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="abstraction.part4.Jaguar" target="abstraction.part4.Animal" relationship="GENERALIZATION">
+      <point x="0.0" y="-16.5" />
+      <point x="493.5" y="63.0" />
+      <point x="407.5" y="63.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="abstraction.part4.Rabbit" target="abstraction.part4.Sellable" relationship="REALIZATION">
+      <point x="-27.75" y="-16.5" />
+      <point x="332.25" y="73.0" />
+      <point x="230.5" y="73.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="abstraction.part4.Horse" target="abstraction.part4.Rideable" relationship="REALIZATION">
+      <point x="-36.0" y="-16.5" />
+      <point x="194.5" y="53.0" />
+      <point x="64.0" y="53.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="abstraction.part4.Horse" target="abstraction.part4.Animal" relationship="GENERALIZATION">
+      <point x="36.0" y="-16.5" />
+      <point x="266.5" y="63.0" />
+      <point x="407.5" y="63.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="abstraction.part4.Camel" target="abstraction.part4.Sellable" relationship="REALIZATION">
+      <point x="0.0" y="-16.5" />
+      <point x="101.0" y="73.0" />
+      <point x="230.5" y="73.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="abstraction.part4.Rabbit" target="abstraction.part4.Animal" relationship="GENERALIZATION">
+      <point x="27.75" y="-16.5" />
+      <point x="387.75" y="63.0" />
+      <point x="407.5" y="63.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="abstraction.part4.Camel" target="abstraction.part4.Rideable" relationship="REALIZATION">
+      <point x="-37.0" y="-16.5" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="abstraction.part4.Horse" target="abstraction.part4.Sellable" relationship="REALIZATION">
+      <point x="0.0" y="-16.5" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="abstraction.part4.Camel" target="abstraction.part4.Animal" relationship="GENERALIZATION">
+      <point x="37.0" y="-16.5" />
+      <point x="138.0" y="63.0" />
+      <point x="407.5" y="63.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="276.0" y="102.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
