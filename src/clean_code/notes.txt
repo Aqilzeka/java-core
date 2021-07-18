@@ -24,7 +24,7 @@
 -- SOLID (Uncle Bob Robert Martin)
     single responsible principle
         Testing – A class with one responsibility will have far fewer test cases.
-        Lower coupling – Less functionality in a single class will have fewer dependencies.
+        Lower coupling – Less functionality in innerClass single class will have fewer dependencies.
         Organization – Smaller, well-organized classes are easier to search than monolithic ones.
         code is easier to maintain
         easier to add new functionality

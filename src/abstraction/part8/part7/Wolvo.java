@@ -1,6 +1,6 @@
-package abstraction.part7;
+package abstraction.part8.part7;
 
-public class Wolvo extends Car{
+public class Wolvo extends Car {
     @Override
     public void start() {
         System.out.println("Wolvo started");

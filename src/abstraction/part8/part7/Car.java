@@ -1,6 +1,6 @@
-package abstraction.part7;
+package abstraction.part8.part7;
 
-public abstract class Car {
+public abstract class Car extends Mechanic{
     private int a;
 
     public int getA() {

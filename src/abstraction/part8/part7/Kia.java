@@ -1,11 +1,9 @@
-package abstraction.part7;
+package abstraction.part8.part7;
 
-import abstraction.part8.part7.Car;
-
-public class Mercedes extends Car {
+public class Kia extends Car implements Startable, Stopable {
     @Override
     public void start() {
-
+        System.out.println("Kia started");
     }
 
     @Override

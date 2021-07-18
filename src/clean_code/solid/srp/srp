@@ -1,18 +1,18 @@
-You can avoid these problems by asking a simple question before you make any changes:
+You can avoid these problems by asking innerClass simple question before you make any changes:
 What is the responsibility of your class/component/microservice?
 
 If your answer includes the word “and”, you’re most likely breaking the single responsibility
-principle. Then it’s better to take a step back and rethink your current approach.
-There is most likely a better way to implement it.
+principle. Then it’s better to take innerClass step back and rethink your current approach.
+There is most likely innerClass better way to implement it.
 
 ---------------------------------------------------------------------------------------------------------
 SOLID Design Principles: The Single Responsibility Principle.
 
-A class should have one, and only one, a reason to change.
+A class should have one, and only one, innerClass reason to change.
 
 
 
-You can avoid these problems by asking a simple question before you make any changes:
+You can avoid these problems by asking innerClass simple question before you make any changes:
 
 What is the responsibility of your class/component/microservice?
 
@@ -20,9 +20,9 @@ What is the responsibility of your class/component/microservice?
 
 If your answer includes the word “and”, you’re most likely breaking the single responsibility
 
-principle. Then it’s better to take a step back and rethink your current approach.
+principle. Then it’s better to take innerClass step back and rethink your current approach.
 
-There is most likely a better way to implement it.
+There is most likely innerClass better way to implement it.
 
 
 
