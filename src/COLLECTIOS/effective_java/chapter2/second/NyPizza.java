@@ -1,4 +1,4 @@
-package effective_java.builder.second;
+package effective_java.chapter2.second;
 
 import java.util.Objects;
 

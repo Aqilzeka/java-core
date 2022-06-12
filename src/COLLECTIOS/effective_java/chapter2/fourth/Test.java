@@ -1,10 +1,6 @@
-package effective_java.builder.fourth;
+package effective_java.chapter2.fourth;
 
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.stream.IntStream;
 
 public class Test {
     public static void main(String[] args) {

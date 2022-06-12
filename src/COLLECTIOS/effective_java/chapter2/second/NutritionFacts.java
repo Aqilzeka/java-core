@@ -1,4 +1,4 @@
-package effective_java.builder.second;
+package effective_java.chapter2.second;
 
 public class NutritionFacts {
     private final int servingSize;

@@ -1,7 +1,4 @@
-package effective_java.builder.second;
-
-import static effective_java.builder.second.NyPizza.Size.SMALL;
-import static effective_java.builder.second.Pizza.Topping.*;
+package effective_java.chapter2.second;
 
 public class Main {
 

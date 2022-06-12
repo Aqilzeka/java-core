@@ -1,4 +1,4 @@
-package effective_java.builder.third;
+package effective_java.chapter2.third;
 
 public class Elvis2 {
     private static final Elvis2 INSTANCE = new Elvis2();
