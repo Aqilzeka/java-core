@@ -2,6 +2,15 @@ package javase.chapter3;
 
 public class WhileLoops {
     public static void main(String[] args) {
+
+
+        int a = 0;
+        while(a++ < 19) {
+            System.out.println(a);
+        }
+        System.out.println(a);
+
+
 //        for( ; ; )
 //            System.out.println("Hello World");
 
@@ -11,16 +20,16 @@ public class WhileLoops {
 //        System.out.print(x + " ");
 //        method1();
 
-        INNER_LOOP: for (int i = 0; i < 10; i++) {
-            System.out.println();
-
-            for (int j = 0; j < 10; j++) {
-                if (j == 6) {
-                    break ;
-                }
-                System.out.print(j);
-            }
-        }
+//        INNER_LOOP: for (int i = 0; i < 10; i++) {
+//            System.out.println();
+//
+//            for (int j = 0; j < 10; j++) {
+//                if (j == 6) {
+//                    break ;
+//                }
+//                System.out.print(j);
+//            }
+//        }
 
     }
 
