@@ -74,3 +74,23 @@ This means that when the last line of the method is reached, the input must inhe
 
 _**NOTE:** Notice that **boolean, long, float, and double** are excluded from switch statements, as are their associated Boolean, Long, Float, and Double classes. The reasons are varied, such as boolean having too small a range of values and floating-point numbers having quite a wide range of values. For the exam, though, you just need to know that they are not permitted in switch statements._
 
+---
+
+* The values in each case statement must be compile-time constant values of the same data type as the switch value.  **Methods are not evaluated until runtime**
+
+* Unlike a traditional switch statement, though, switch expressions have special rules around when the **default** branch is **required**.
+
+## Adding Optional Labels
+
+    static void  method1() {
+        int[][] myComplexArray = {{5,2,1,3},{3,9,8,9},{5,7,12,7}};
+
+        OUTER_LOOP:  for(int[] mySimpleArray : myComplexArray) {
+            INNER_LOOP:  for(int i=0; i<mySimpleArray.length; i++) {
+                System.out.print(mySimpleArray[i]+"\t");
+            }
+            System.out.println();
+        }
+    }
+Labels follow the same rules for formatting as identifiers. For readability, they are commonly expressed using uppercase letters in snake_case with underscores between words.
+![img.png](img.png)
