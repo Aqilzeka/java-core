@@ -3,12 +3,15 @@ package javase.chapter3;
 public class WhileLoops {
     public static void main(String[] args) {
 
+        int y = -2;
+        do System.out.println(++y + "KFK");
+        while (y  <= 5);
 
-        int a = 0;
-        while(a++ < 19) {
-            System.out.println(a);
-        }
-        System.out.println(a);
+//        int a = 0;
+//        while(a++ < 19) {
+//            System.out.println(a);
+//        }
+//        System.out.println(a);
 
 
 //        for( ; ; )

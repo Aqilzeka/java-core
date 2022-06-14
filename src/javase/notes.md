@@ -70,7 +70,7 @@ This means that when the last line of the method is reached, the input must inhe
 * char and Character
 * String
 * enum values
-* var (if the type resolves to one of the preceding types)
+* **var (if the type resolves to one of the preceding types)**
 
 
 _**NOTE:** Notice that **boolean, long, float, and double** are excluded from switch statements, as are their associated Boolean, Long, Float, and Double classes. The reasons are varied, such as boolean having too small a range of values and floating-point numbers having quite a wide range of values. For the exam, though, you just need to know that they are not permitted in switch statements._
@@ -80,6 +80,11 @@ _**NOTE:** Notice that **boolean, long, float, and double** are excluded from sw
 * The values in each case statement must be compile-time constant values of the same data type as the switch value.  **Methods are not evaluated until runtime**
 
 * Unlike a traditional switch statement, though, switch expressions have special rules around when the **default** branch is **required**.
+
+## FOR
+
+A **for-each loop** can be executed on **any Collections object** that implements **java.lang.Iterable**, **such as List or Set, but not all Collections classes, such as Map**
+
 
 ## Adding Optional Labels
 
