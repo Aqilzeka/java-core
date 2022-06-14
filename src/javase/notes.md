@@ -100,3 +100,48 @@ A **for-each loop** can be executed on **any Collections object** that implement
     }
 Labels follow the same rules for formatting as identifiers. For readability, they are commonly expressed using uppercase letters in snake_case with underscores between words.
 ![img.png](img.png)
+
+
+# Chapter 4 Core APIs
+
+## Creation
+        String name = "Fluffy";    // COMPILE
+        String name = new String("Fluffy");  // COMPILE
+        String name = """
+                Fluffy""";  // COMPILE
+        String name = """Fluffy""";     // DOES NOT COMPILE
+
+## Important String Methods
+
+* length()
+* charAt(int index)
+
+* indexOf(int ch)
+* indexOf(int ch, int fromIndex)
+* indexOf(String str)
+* indexOf(String str, int fromIndex)
+
+* substring(int beginIndex)
+* substring(int beginIndex, int endIndex)
+
+* public String toLowerCase()
+* public String toUpperCase()
+
+## Checking for Equality
+* public boolean equals(Object obj)
+* public boolean equalsIgnoreCase(String str)
+
+## Searching for Substrings
+* public boolean startsWith(String prefix)
+* public boolean endsWith(String suffix)
+* public boolean contains(CharSequence charSeq)
+
+## Replacing Values
+* public String replace(char oldChar, char newChar)
+* public String replace(CharSequence target, CharSequence replacement)
+
+## Removing Whitespace
+* public String strip()
+* public String stripLeading()
+* public String stripTrailing()
+* public String trim()
