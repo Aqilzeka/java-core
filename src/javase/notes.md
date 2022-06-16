@@ -141,7 +141,61 @@ Labels follow the same rules for formatting as identifiers. For readability, the
 * public String replace(CharSequence target, CharSequence replacement)
 
 ## Removing Whitespace
-* public String strip()
-* public String stripLeading()
-* public String stripTrailing()
-* public String trim()
+* public String strip() remove both the leading and trailing whitespace
+* public String trim() remove both the leading and trailing whitespace
+* public String stripTrailing() remove only the trailing whitespace
+* public String stripLeading() remove only the leading whitespace
+
+## Working with Indentation
+* public String indent(int numberSpaces) 
+* numberSpaces > 0 isə numberSpaces dəfə whitespace əlavə edir
+* numberSpaces < 0 isə numberSpaces dəfə whitespace çıxılır (ən yaxın characterdən)
+* numberSpaces = 0 isə string olduğu kimi çap olunur
+* public String stripIndent() evvel ve sondan whitespace-leri silir 
+
+## Translating Escapes
+* public String translateEscapes()  //t --> /t 
+
+## Checking for Empty or Blank Strings
+* public boolean isEmpty()
+* public boolean isBlank()
+
+      System.out.println(" ".isEmpty()); // false
+      System.out.println("".isEmpty());  // true
+      System.out.println(" ".isBlank()); // true
+      System.out.println("".isBlank());  // true
+
+## Formatting Values
+* public static String format(String format, Object args…)
+* public static String format(Locale loc, String format, Object args…)
+* public String formatted(Object args…)
+
+
+* %s	Applies to any type, commonly String values
+* %d	Applies to integer values like int and long
+* %f	Applies to floating-point values like float and double
+* %n	Inserts a line break using the system-dependent line separator
+
+      var str = "Food: %d tons".formatted(2.0); // IllegalFormatConversionException
+
+       var pi = 3.14159265359;
+       System.out.format("[%f]",pi);      // [3.141593]
+       System.out.format("[%12.8f]",pi);  // [  3.14159265]
+       System.out.format("[%012f]",pi);   // [00003.141593]
+       System.out.format("[%12.2f]",pi);  // [        3.14]
+       System.out.format("[%.3f]",pi);    // [3.142]
+
+## String Builder
+In case you are wondering, the authors of StringBuilder did not implement equals(). If you call equals() on two StringBuilder instances, it will check reference equality. You can call toString() on StringBuilder to get a String to check for equality instead.
+
+## String Pool 
+The string pool contains literal values and constants that appear in your program. For example, "name" is a literal and therefore goes into the string pool. The myObject.toString() method returns a string but not a literal, so it does not go into the string pool.
+
+public String intern()
+If the literal is not yet in the string pool, Java will add it at this time.
+
+        var name = "Hello World";
+        var name2 = new String("Hello World").intern();
+        System.out.println(name == name2); // true
+
+1. [ ] **NOTE**: _Remember to never use intern() or == to compare String objects in your code. The only time you should have to deal with these is on the exam._ 
