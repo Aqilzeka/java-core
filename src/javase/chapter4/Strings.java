@@ -11,8 +11,11 @@ public class Strings {
 //        method3();
 //        method4();
 //        method5();
-        method6();
-
+//        method6();
+//        method7();
+//        method8();
+//        method9();
+        method10();
     }
 
 
@@ -76,15 +79,55 @@ public class Strings {
         out.println("abc".contains("B"));   // false
     }
 
-
     private static void method7() {
         out.println("abc".strip());                 // abc
-        out.println("\t   a b c\n".strip());        // a b c
-
-        String text = " abc\t ";
-        out.println(text.trim().length());          // 3
-        out.println(text.strip().length());         // 3
-        out.println(text.stripLeading().length());  // 5
-        out.println(text.stripTrailing().length()); // 4
+        out.println("    a b\t c  \n".strip());        // a b c
+        out.println();
+        String text = "     a  b     c\t      ";
+        out.println(text.trim());          // 3
+        out.println(text.strip());         // 3
+        out.println(text.stripLeading());  // 5
+        out.println(text.stripTrailing()); // 4
     }
+
+    private static void method8() {
+
+        var block = """
+                a
+                 b
+                c""";
+
+        var concat = "       a\n" +
+                "    b           \n" +
+                " c  ";
+
+        out.println(block.length());
+        out.println(concat.length());
+
+        out.println(block.indent(6));
+
+        out.println(concat.indent(-1));
+        out.println(concat.indent(0));
+        out.println(concat.indent(-4));
+        out.println(concat.stripIndent());
+
+    }
+
+    private static void method9() {
+        var str = "1y\t2";
+        out.println(str);
+        out.println(str.translateEscapes());
+    }
+    private static void method10() {
+        out.println(" ".isEmpty()); // false
+        out.println("".isEmpty());  // true
+        out.println(" ".isBlank()); // true
+        out.println("".isBlank());  // true
+        out.println("".formatted("Aku"));
+
+        out.println("Hello %s, order %d is ready"
+                .formatted("Ali", 1));
+    }
+
+
 }
